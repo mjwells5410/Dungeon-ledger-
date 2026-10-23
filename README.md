@@ -1,40 +1,20 @@
-# Dungeon Ledger v1.2.0
+# Dungeon Ledger v1.3.0
 
-A mobile-friendly, static D&D character tracker for GitHub Pages. This package is a complete replacement pack; the files are intended to sit directly in the repository root, not inside an extra nested folder.
+A mobile-friendly static D&D character tracker for GitHub Pages. Upload every file in this folder directly to the repository root.
 
-## What's included
-- Multiple character sheets saved in the current browser/device
-- D&D 5e (2014) and 2024 ruleset label
-- 4d6, drop lowest ability score rolling
-- Standard array (15, 14, 13, 12, 10, 8)
-- 27-point buy cost/validity checker
-- Ability modifiers, proficiency bonus, skills/expertise, class levels, combat values, equipment, and notes
-- JSON import/export backups
-- Installable manifest and app icons
-- Updated service worker: network-first page loading, versioned cache, and old-cache cleanup to help updates appear
+## New in v1.3.0
+- Class feature reminders automatically appear based on each class and level entered.
+- Multiclass prerequisites check ability scores before allowing an added class. Fighter accepts Strength 13 **or** Dexterity 13; the other classic prerequisites are checked as shown in the app.
+- Class features update when you change class levels or ability scores.
+- Includes 4d6-drop-lowest rolls, standard array, 27-point buy, skill calculations, character import/export, mobile styling, app icons, and versioned service-worker caching.
 
-This is a character tracker and calculator, not a complete licensed reproduction of every official sourcebook. It does not provide spell tracking or automate every class feature and rule. Verify character rules against the books used at your table. Hit point totals can require manual correction, especially for multiclass characters.
+## Install/update from Safari on iPhone
+1. Download and extract the ZIP in Files.
+2. Open your GitHub repository and upload/replace `index.html`, `manifest.webmanifest`, `sw.js`, both icons, and `README.md` in the repository root.
+3. Commit to the branch/folder configured under Settings → Pages. Wait for the latest deployment to succeed.
+4. Open the published site in a Safari Private tab to test the new version. If it is updated there but not in your Home Screen shortcut, remove the old shortcut and add it again from the fresh site.
 
-## Replace the files in your existing GitHub repository (Safari on iPhone)
-1. Download and extract the ZIP.
-2. Open your repository on github.com.
-3. For each existing file, open it and use the edit/pencil control to replace its contents, or use **Add file → Upload files** on desktop if available. The files to replace/add are `index.html`, `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png`, and `README.md`.
-4. Make sure these files are in the **repository root** (same level as the README, not in a new nested folder).
-5. Commit the changes to the branch/folder configured in **Settings → Pages**.
-6. In **Settings → Pages**, confirm the publishing source matches that branch/folder. Wait for the latest deployment to finish successfully.
-7. Open the published URL in Safari. If the old app remains, test in a Private tab first. If the Private tab is updated, remove the old Home Screen shortcut and add it again after opening the fresh site.
+## Rules note
+Feature reminders are concise summaries for the 2014-style core class progression, with a few rules-version-neutral labels where progressions differ. They are not full official rules text. Subclass feature details, spells, optional features, species/background features, and every 2024-specific progression are not fully automated. Verify exact rules with the books used at your table. The app does not include spell tracking.
 
-## Expected GitHub Pages structure
-```
-index.html
-manifest.webmanifest
-sw.js
-icon-192.png
-icon-512.png
-README.md
-```
-
-## Backups
-Use **Export** in the app to download a JSON backup. Import that JSON on the same or another device to restore character data. Browser storage is device/browser-specific; GitHub Pages does not automatically sync characters between devices.
-
-Unofficial fan-made tool; not affiliated with Wizards of the Coast.
+Characters are saved in browser storage on the current device. Use Export for backups; GitHub Pages does not sync character data between devices.
