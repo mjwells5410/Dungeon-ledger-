@@ -1,0 +1,10 @@
+{
+  "name": "Dungeon Ledger",
+  "short_name": "Dungeon Ledger",
+  "description": "Mobile-friendly D&D character builder and sheet",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b1118",
+  "theme_color": "#101923",
+  "icons": []
+}
