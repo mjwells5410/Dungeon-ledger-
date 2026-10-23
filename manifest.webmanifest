@@ -1,10 +1,14 @@
 {
-  "name": "Dungeon Ledger",
+  "name": "Dungeon Ledger — D&D Character Builder",
   "short_name": "Dungeon Ledger",
-  "description": "Mobile-friendly D&D character builder and sheet",
-  "start_url": "./",
+  "description": "Mobile-friendly D&D character tracker with ability rolling, standard array, point buy, classes, skills, combat, and JSON backups.",
+  "start_url": "./?v=1.2.0",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0b1118",
   "theme_color": "#101923",
-  "icons": []
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
 }
