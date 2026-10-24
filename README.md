@@ -1,20 +1,20 @@
-# Dungeon Ledger v1.3.0
+# Dungeon Ledger v1.4.0
 
-A mobile-friendly static D&D character tracker for GitHub Pages. Upload every file in this folder directly to the repository root.
+Mobile-friendly D&D character sheet and tracker for GitHub Pages.
 
-## New in v1.3.0
-- Class feature reminders automatically appear based on each class and level entered.
-- Multiclass prerequisites check ability scores before allowing an added class. Fighter accepts Strength 13 **or** Dexterity 13; the other classic prerequisites are checked as shown in the app.
-- Class features update when you change class levels or ability scores.
-- Includes 4d6-drop-lowest rolls, standard array, 27-point buy, skill calculations, character import/export, mobile styling, app icons, and versioned service-worker caching.
+## What's new in v1.4.0
+- Spellbook dropdown with spell-level filtering and automatically filled spell level, school, range, damage/healing, damage type, save/attack, duration, and components.
+- Weapon dropdowns for simple/martial melee and ranged weapons. Weapon entries include damage dice, damage type, range, properties, proficiency toggle, and estimated attack bonus.
+- Spell and weapon selections are saved with each character and included in JSON exports/imports.
+- Service-worker cache version bumped to help browsers receive the new version.
 
-## Install/update from Safari on iPhone
-1. Download and extract the ZIP in Files.
-2. Open your GitHub repository and upload/replace `index.html`, `manifest.webmanifest`, `sw.js`, both icons, and `README.md` in the repository root.
-3. Commit to the branch/folder configured under Settings → Pages. Wait for the latest deployment to succeed.
-4. Open the published site in a Safari Private tab to test the new version. If it is updated there but not in your Home Screen shortcut, remove the old shortcut and add it again from the fresh site.
+## Publish with GitHub Pages
+1. Extract this ZIP.
+2. In your repository, upload every file in this folder directly into the same publishing folder as the current `index.html` (usually `main` branch, root).
+3. Replace existing files when prompted and commit.
+4. Wait for Pages deployment to succeed, then open the site in Safari Private Browsing to test.
 
-## Rules note
-Feature reminders are concise summaries for the 2014-style core class progression, with a few rules-version-neutral labels where progressions differ. They are not full official rules text. Subclass feature details, spells, optional features, species/background features, and every 2024-specific progression are not fully automated. Verify exact rules with the books used at your table. The app does not include spell tracking.
+## Rules and content scope
+This unofficial fan-made tool includes a curated spell selection and standard weapon list with concise mechanical data. It does not include every spell, subclass, magic item, or option from every paid sourcebook. Spell availability depends on character class, level, rules version, and the books your table uses; this app's dropdown is a catalogue, not an automatic legality checker. Verify details against your sourcebooks.
 
-Characters are saved in browser storage on the current device. Use Export for backups; GitHub Pages does not sync character data between devices.
+Character data is stored in browser local storage on the current device. Export JSON backups regularly.
